@@ -1,0 +1,3 @@
+Pasta Model: - Produto: id (Criado automaticamente pela API), nomeProduto, quantidade, valor, observação.
+
+Criando a classe Produto com seus atributos.
