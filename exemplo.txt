@@ -2,6 +2,8 @@ Objetivo:
 
 Criar uma APIRestFull para controle de produtos.
 
-Atributos de produto:
-    Model:
-    - Produto: id (Criado automaticamente pela API), nomeProduto, quantidade, valor, observação. 
+Model:
+    - Produto: id (Criado automaticamente pela API), nomeProduto, quantidade, valor, observação.
+
+Repository:
+    - obterTodos, obterPorID, cadastrar/adicionar, atualizarProduto, deletarProduto.
