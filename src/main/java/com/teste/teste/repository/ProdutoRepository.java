@@ -1,6 +1,5 @@
 package com.teste.teste.repository;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -31,6 +30,42 @@ public class ProdutoRepository {
 
     }
 
+    /*
+     * Método para aicionar um produto
+     */
+    public Produto adicionar(Produto produto){
+        
+        ultimoID += 1;
+
+        produto.setId(ultimoID);
+        produtos.add(produto); // adicionando o produto na lista
+        
+        return produto;
+    }
+
+    /*
+     * Método que deleta um produto
+     */
+    public void deletar(Integer id){
+        produtos.removeIf(produto -> produto.getId() == id); // remove de acordo com o filtro
+    }
+
+    /*
+     * Método que atualiza um produto
+     */
+    public Produto atualizar(Produto produto){
+        
+        //Remover o produto antifo e substituir pelo novo;
+        //Encontrar o produto
+        obterporID(produto.getId());
+
+        //Removendo
+        deletar(produto.getId());
+
+        // Adicionando um novo produto no lugar do excluído:
+        produtos.add(produto);
 
 
+        return produto;
+    }
 }

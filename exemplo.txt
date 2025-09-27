@@ -2,8 +2,12 @@ Objetivo:
 
 Criar uma APIRestFull para controle de produtos.
 
-Model:
+Model: ok
     - Produto: id (Criado automaticamente pela API), nomeProduto, quantidade, valor, observação.
 
-Repository:
+Repository: ok
     - obterTodos, obterPorID, cadastrar/adicionar, atualizarProduto, deletarProduto.
+
+Services (serviço de produto):
+    - obterTodos, obterPorID, cadastrar/adicionar, atualizarProduto, deletarProduto.
+    - pode ter regra de negócio ou não.
