@@ -4,7 +4,7 @@ public class Produto {
     
     //#region Atributos
     private Integer id;
-    private String nomeProduto;
+    private String nome;
     private Integer quantidade;
     private double valor;
     private String observacao;
@@ -18,10 +18,10 @@ public class Produto {
         this.id = id;
     }
     public String getNomeProduto() {
-        return nomeProduto;
+        return nome;
     }
-    public void setNomeProduto(String nomeProduto) {
-        this.nomeProduto = nomeProduto;
+    public void setNomeProduto(String nome) {
+        this.nome = nome;
     }
     public Integer getQuantidade() {
         return quantidade;
@@ -33,7 +33,7 @@ public class Produto {
         return valor;
     }
     public void setValor(double valor) {
-        if (valor < 0){
+        if (0 < valor){
             this.valor = valor;
         }
         else {
