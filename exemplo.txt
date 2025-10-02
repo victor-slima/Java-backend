@@ -8,6 +8,8 @@ Model: ok
 Repository: ok
     - obterTodos, obterPorID, cadastrar/adicionar, atualizarProduto, deletarProduto.
 
-Services (serviço de produto):
+Services (serviço de produto): ok
     - obterTodos, obterPorID, cadastrar/adicionar, atualizarProduto, deletarProduto.
     - pode ter regra de negócio ou não.
+
+Controller:
