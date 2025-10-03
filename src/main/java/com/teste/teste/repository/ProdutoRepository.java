@@ -54,7 +54,10 @@ public class ProdutoRepository {
      * Método que atualiza um produto
      */
     public Produto atualizar(Produto produto){
-        
+        Optional<Produto> produtoEncontrado = obterporID(produto.getId());
+        if (produtoEncontrado.isEmpty()){
+            throw new IllegalArgumentException("Produto nao encontrado.");
+        }
         //Remover o produto antifo e substituir pelo novo;
         //Encontrar o produto
         obterporID(produto.getId());
